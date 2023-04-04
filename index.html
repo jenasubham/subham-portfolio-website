@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Mr. Subham's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/my avataaars.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="/home.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- --------------------------------Header ---------------------------------->
+    <header>
+        <a href="#" class="logo inverted"><img src="/img/my avataaars.png" alt=""></a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class='bx bx-moon'></i>
+                    <i class='bx bx-sun'></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </ul>
+    </header>
+
+    <!--------------------------------------- Home ----------------------------------------------->
+
+    <section class="home">
+        <section class="wrapper inverted">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+
+        <div id="hometext">
+            <h5 style="font-weight:bold ;margin: 15px; font: size 3rem;">Hello, I'm</h5>
+            <h1>Subham Jena</h1>
+            <h5>(A Coding enthusiast)</h5>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ullam adipisci, sit itaque modi
+                eveniet similique, quia sequi odio dignissimos facilis voluptate iste labore nesciunt!</p>
+
+            <a href="https://drive.google.com/file/d/1tqLxIl6WjrpRBykcjDl1oyp29p2bThPG/view?usp=share_link"
+                target="_blank" rel="noopener noreferrer"><button class="cv inverted">Download CV</button></a>
+        </div>
+
+        <div id="picstuff">
+            <img src="img/mypic.png" class="inverted" alt="My pic">
+            <div class="social">
+                <a href="https://www.facebook.com/chinu.banty/" target="_blank"><i
+                        class='bx bxl-facebook inverted'></i></a>
+                <a href="https://www.instagram.com/jena__subham/" target="_blank"><i
+                        class='bx bxl-instagram inverted'></i></a>
+                <a href="https://twitter.com/jena__subham" target="_blank"><i class='bx bxl-twitter inverted'></i></a>
+                <a href="https://www.linkedin.com/in/jenasubham" target="_blank"><i
+                        class='bx bxl-linkedin inverted'></i></a>
+                <a href="https://github.com/jenasubham" target="_blank"><i class='bx bxl-github inverted'></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------------------skills starts Here-------------------------------- -->
+    <section class="skills" id="skills">
+        <h1> ⭐My Skills⭐</h1>
+        <span>--My Strength--</span>
+        <div class="skills_main">
+
+            <div class="skills_fronted ">
+                <h3 style="padding: 8px;">Frontend Development</h3>
+                <div class="skills_col1">
+                    <div class="skills_data_col1">
+                        <i class='bx bxs-badge-check'>
+                            <h3>HTML</h3>
+                        </i>
+                        <div>Intermediate</div>
+                        <i class='bx bxs-badge-check'>
+                            <h3>CSS</h3>
+                        </i>
+                        <div>Advance</div>
+                        <i class='bx bxs-badge-check'>
+                            <h3>javaScript</h3>
+                        </i>
+                        <div>basic</div>
+                    </div>
+                    <div class="skills_data_col2">
+                        <i class='bx bxs-badge-check'>
+                            <h3>Git</h3>
+                        </i>
+                        <div>Intermediate</div>
+                        <i class='bx bxs-badge-check'>
+                            <h3>GitHub</h3>
+                        </i>
+                        <div>Advance</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills_coding">
+                <h3 style="padding: 10px;">Coding Language</h3>
+                <div class="skills_col2">
+                    <div class="skills_data_col1">
+                        <i class='bx bxs-badge-check'>
+                            <h3>Java</h3>
+                        </i>
+                        <div>Intermediate</div>
+                        <i class='bx bxs-badge-check'>
+                            <h3>Python</h3>
+                        </i>
+                        <div>Intermediate</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- --------------------------------About Content ---------------------------------->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+
+                <img src="/img/my pic2.jpg" class="inverted" alt="">
+                <div> </div>
+            </div>
+            <div class="about-text">
+                <p>A second-year college student with a
+                    creative & learning mindset. I'm always
+                    looking for new ways to learn and improve
+                    my skills. Currently, Seeking an opportunity
+                    to utilize my skills and knowledge to
+                    contribute to the growth of the
+                    organisation.</p>
+                <div class="information">
+                    <!-- Box 1 -->
+                    <div class="info-box">
+                        <i class='bx bxs-user'></i>
+                        <span>Subham Jena</span>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="info-box">
+                        <i class='bx bxs-phone'></i>
+                        <span>8093190505</span>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="info-box">
+                        <i class='bx bxs-envelope'></i>
+                        <span>subhamjena4519@gamil.com</span>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/file/d/1tqLxIl6WjrpRBykcjDl1oyp29p2bThPG/view?usp=share_link"
+                    target="_blank" rel="noopener noreferrer"><button class="btn inverted">Download CV</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>Let's Connect</h1>
+        </div>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/0ec2554bd635a6fd4b2f5388bc7e1ccd" method="POST">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" name="" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Write Message Here..."
+                    required></textarea>
+                <button type="submit" value="Send" class="contact-button inverted">send</button>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+
+        <div class="copyright">
+            <hr>
+            <p>Create By <a href="">Mr. Subham</a> | &#169; 2022 All Right Reserved.</p>
+
+        </div>
+        <a href="https://www.notion.so/jenasubham/Web-Dev-Ideas-4e46bc206eff49efbc680f754ca15715" target="_blank"
+            class="futurework" rel="noopener noreferrer">Future Work</a>
+    </footer>
+
+
+    <!---------------------------------- move top start ---------------------------------->
+
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span><img src="/img/upper-arrow.svg" alt=""> </span>
+    </button>
+
+    <script>
+        chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('.inverted').forEach((result) => {
+        result.classList.toggle("invert")
+    })
+});
+    </script>
+</body>
+
+</html>
